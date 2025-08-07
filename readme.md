@@ -31,6 +31,60 @@ This is the backend API for a full-stack Inventory Management System designed to
 
 ---
 
+## Prerequisites
+
+- Node.js >= 14
+- MySQL server installed and running
+- NPM (Node Package Manager)
+- Postman or any API testing tool (optional, for testing)
+
+---
+
+## Getting Started
+
+### 1. Clone the Repository
+
+- git clone <your-repository-url>
+
+
+### 2. Install Dependencies
+
+- npm install
+
+
+### 3. Setup Environment Variables
+
+- Create a `.env` file with your MySQL credentials and other configs:
+
+MYSQL_DATABASE=inventory_db
+
+MYSQL_USER=root
+
+MYSQL_PASSWORD=your_mysql_password
+
+MYSQL_HOST=localhost
+
+MYSQL_PORT=3306
+
+JWT_SECRET=your_jwt_secret
+
+PORT=5000
+
+
+Make sure to replace values appropriately.
+
+### 4. Create MySQL Database
+
+Log into your MySQL server and create the database:
+
+CREATE DATABASE inventory_db;
+
+
+### 5. Run the Server
+
+
+
+
 ## API Endpoints Overview
 
 All protected endpoints require a JWT token in the request header:
